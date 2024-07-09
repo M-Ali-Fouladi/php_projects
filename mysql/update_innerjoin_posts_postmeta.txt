@@ -1,0 +1,11 @@
+UPDATE wp_posts 
+INNER join wp_postmeta ON wp_posts.ID = wp_postmeta.post_id
+SET wp_posts.post_modified=NOW(),wp_posts.post_modified_gmt=NOW()  
+WHERE wp_postmeta.post_id=2476064 and wp_postmeta.meta_key='_price'
+
+
+
+UPDATE wp_posts 
+INNER join wp_postmeta ON wp_posts.ID = wp_postmeta.post_id
+SET wp_posts.post_modified=NOW(),wp_posts.post_modified_gmt=NOW(),wp_postmeta.meta_value=5000  
+WHERE wp_postmeta.post_id=4044270 and wp_postmeta.meta_key='_price'

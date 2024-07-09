@@ -1,0 +1,4 @@
+
+SELECT * 
+FROM wp_posts INNER JOIN wp_postmeta ON wp_posts.ID = wp_postmeta.post_id 
+where wp_posts.post_type='product' and wp_postmeta.meta_key='_price' and SUBSTR(wp_posts.post_modified,1,10)<> 'phpdate' LIMIT 10 

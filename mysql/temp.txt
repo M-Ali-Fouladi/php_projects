@@ -1,0 +1,1 @@
+UPDATE wp_postmeta SET wp_postmeta.meta_value='5000'  WHERE   wp_postmeta.post_id=2476064 and wp_postmeta.meta_key='_price'
